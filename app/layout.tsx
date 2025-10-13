@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
+import "./style.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'></link>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'></link>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
