@@ -11,7 +11,6 @@ export default function Partners() {
             <p>The platforms <br />we are Partner with</p>
             <div className="flex partners-div">
                 <i className="fi fi-brands-facebook"></i>
-                <i className="fi fi-brands-linkedin"></i>
                 <i className="fi fi-brands-youtube"></i>
                 <i className="fi fi-brands-google"></i>
                 <i className="fi fi-brands-whatsapp"></i>

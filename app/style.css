@@ -23,15 +23,18 @@ a{
   padding: 1rem;
 }
 button{
-  background: #386d41;
+  background: #194563;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 01rem 2rem;
   font-size: 18px;
+  letter-spacing: 3;
   border: none;
   cursor: pointer;
 }
 button:hover{
-  background: #386;
+  background: #fff;
+  color: #194563;
+  border-radius: 10px;
 }
 
 
@@ -42,6 +45,44 @@ button:hover{
 header{
   background: #dbfbfc;
   top: -100%;
+  color: #194563;
+}
+
+.booking-icon-container{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;  
+}
+
+.booking-icon-container i{
+  position: relative;
+  font-size: 40px;
+}
+.booking-icon-container .booking-alert{
+  position: absolute;
+  font-size: 12px;
+  top: 80px;
+  width: max-content;
+  background-color: #194563;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.booking-icon-container:hover .booking-alert{
+  opacity: 1;
+  visibility: visible;
+}
+
+.booking-icon-container:hover{
+  color: #00af75;
+  transition: color-color 0.3s ease;
 }
 
 .fixed{
@@ -50,9 +91,9 @@ header{
   right: 0;
   width: 100vw;
   transition: top 0.5s ease-out;
-  background-color: #fff;
   z-index: 100;
   padding: 0 1rem;
+  background: #ffffff;
 }
 
 header .container{
@@ -64,6 +105,65 @@ header .mobile-toggle{
   font-size: xx-large;
   display: none;
 }
+header nav .services-container i, header nav .packages-container i{
+  position: absolute;
+  rotate: -90deg;
+  margin-left: 10px;
+  transition: rotate 0.4s ease;
+}
+
+header nav a{
+  margin: 0 1.6rem;
+  font-size: 18px;
+  text-align: left;
+}
+
+header nav .services-container , header nav .packages-container{
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  padding:  1.5rem 0;
+  width: max-content;
+}
+
+.services-container{
+  margin-right: 2rem;
+}
+header nav .services-container .drop-down, .p-drop-down{
+  position: absolute;
+  top: 65;
+  width: max-content;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 2px;
+}
+
+header nav .services-container:hover .drop-down, .packages-container:hover .p-drop-down{
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; 
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 10;
+}
+
+header nav .services-container:hover i, .packages-container:hover i{
+  rotate: 0deg;
+}
+
+header nav .drop-down li, .p-drop-down li{
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+
+header nav .drop-down li:hover, .p-drop-down li:hover{
+  background-color: #194563;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 @media (max-width: 800px) {
   header .mobile-toggle{
@@ -79,33 +179,54 @@ header .mobile-toggle{
   display: block;
 }
  
-  header nav a{
-      background-color: #999;
-      padding: 0.5rem;
-      width: 100%;
-      text-align: left;
-      color: #ffffff;
-      margin: 2px 1rem;
-      display: block;
-    }  
 
-    header .container .block nav {
+header nav .list{
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+    header .container  nav {
       position: fixed;
-      display: block;
-      top: 80;
-      right: -100%;
-      background-color: #fff;
-      padding-top: 1rem;
-      height: 70vh;
-      width: 50vw;
+      top: 100;
+      right: -110%;
+      width: 100vw;
+      background-color: rgba(1, 0, 0, 0.5);
+      backdrop-filter: blur(1px);
       transition: right 0.3s ease-in-out;
+      padding: 1rem 0 1rem 1rem;
+      gap: 2px;
     }
-    header .container .block .active {
+    header .container .active {
       right: 0;
       transition: right 0.3s ease-in-out;
     }
+
+    .services-container:hover .drop-down.s-active, .packages-container:hover .p-drop-down.p-active{
+      display: none;
+    }
+    header nav .services-container:hover i.i-rotate, .packages-container:hover i.i-rotate{
+      rotate: -90deg;
+    }
+
+    .services-container .drop-down li{
+      width: 100vw;
+    }
+
+
+    header nav .services-container .drop-down, .p-drop-down{
+    position: absolute;
+    top: 65;
+    left: 150;
+    width: 100%;
+    display: none;
+  }
+  .booking-icon-container{
+    order: -10; 
 }
 
+}
 
 
 
@@ -126,7 +247,7 @@ header .mobile-toggle{
 }
 .hero .container .title h1{
   line-height: 3rem;
-  font-size: 48px;
+  font-size: 36px;
   color: rgb(62, 69, 71);
 }
 .hero .container .title p{
@@ -143,6 +264,13 @@ header .mobile-toggle{
   height: auto;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero .container .title{
+    display: block;
+    margin-top: -150px;
+  }
 }
 
 
@@ -170,6 +298,10 @@ header .mobile-toggle{
   padding: 4rem;
   text-align: justify;
 }
+.objective .objective-texts h1{
+  font-size: 42px;
+  text-align: left;
+}
 
 @media (max-width: 768px) {
   .objective .objective-texts{
@@ -179,17 +311,19 @@ header .mobile-toggle{
 
 /*----------services----------*/
 
+.services-comp .services{
+  gap: 1rem;
+}
 .services-comp .services-headline{
   text-align: center;
   padding: 1rem;
-  color: #555;
 }
 .services-comp .services-headline h1{
-  font-size: 42px;
+  font-size: 24px;
 }
 .services-comp .services-headline p{
   margin-top: 1rem;
-  font-size: 18px;
+  font-size: 16px;
 }
 .services .service-card {
   background-color: #dbfbfc;
@@ -197,8 +331,6 @@ header .mobile-toggle{
   padding: 1rem;
   border-radius: 10px;
   grid-column: span 4;
-  color: #555;
-  margin-bottom: 1rem;
   box-shadow: #194563 0px 4px 8px -2px;
 }
 .services .service-card i{
@@ -206,15 +338,22 @@ header .mobile-toggle{
   color: #194563;
 }
 .services .service-card h2{
-  font-size: 32px;
-  margin-bottom: 1rem;
+  font-size: 26px;
+  margin-bottom: 0.5rem;
 }
 
 .services .service-card p{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5rem;
-  margin-top: 1rem;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .services-comp .container .services{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
 }
 
 /*---------Cta------------*/
@@ -230,40 +369,33 @@ header .mobile-toggle{
   text-align: center;
 }
 
-.cta button{
-  background: none;
-  border: 1px solid gray;
-  width: 240px;
-  height: 40px;
-  color: #555;
-}
-
-.cta button:hover{
-  border: navajowhite;
-  background-color: #555;
-  color: #eee;
-}
 
 /*-----------Why Us--------*/
 .why-us{
   background-color: #e5fafd;
+  color: #194563;
+}
+.why-us .img-info{
+  width: 100%;
 }
 .why-us .texts{
   text-align: center;
-  color: #555;
+  max-width: 1200px;
+  padding: 2rem 1rem;
 }
 .why-us .texts h1{
-  font-size: 44px;
+  font-size: 24px;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 .why-us .texts p{
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .why-us .img-info .info{
   grid-column: span 7;
-  color: #555;
 }
 
 .why-us .img-info .img-container{
@@ -300,30 +432,23 @@ header .mobile-toggle{
 }
 
 .why-us .img-info .info li .p-wrapper{
-  width: 100%;
-  height: fit-content;
   position: relative;
   overflow: hidden;
 }
-
 .why-us .img-info .info li p{
-  width: 100%;
   position: absolute;
-  top: -100%;
-  left: 0;
   font-size: 18px;
-  color: #555;
   background-color: #fff;
   padding: 0 1rem;
   line-height: 1.5rem;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease-in-out;
 
 }
 .why-us .img-info .info li p.show{
   position: relative;
   padding: 1rem;
-  top: 0;
-  transition: all 0.5s ease;
+  height: fit-content;
+  transition: all 0.8s ease;
 }
 
 /*----------partners------*/
@@ -352,6 +477,96 @@ header .mobile-toggle{
   }
 }
 
+/*---------FAQ---------*/
+
+.faq{
+  background-color: #dbfbfc;
+  color: #555;
+}
+
+
+
+
+.faq h2{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.faq-info{
+  width: 100vw;
+  padding: 0 1rem;
+}
+
+.faq-info .img-info{
+  font-size: 200px;
+  color: #194563;
+  grid-column: span 4;
+  grid-row: span 4;
+  margin-top: 2rem;
+}
+
+.faq-info .info{
+  grid-column: span 8;
+}
+
+
+.faq .faq-info .info li{
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.faq .faq-info .info li h3{
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1rem ;
+  justify-content: space-between;
+}
+.faq .faq-info .info li h3 i{
+  rotate: -90deg;
+  transition: rotate 0.4s ease;
+}
+
+.faq .faq-info .info li.rotate h3 i{
+  rotate: 0deg;
+  transition: rotate 0.4s ease;
+}
+
+.faq .faq-info .info li .p-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.faq .faq-info .info li p{
+  position: absolute;
+  font-size: 18px;
+  color: #555;
+  background-color: #fff;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+  transition: all 0.4s ease-in-out;
+
+}
+.faq .faq-info .info li p.show{
+  position: relative;
+  padding: 1rem;
+  height: fit-content;
+  transition: all 0.8s ease;
+}
+
+
+
+@media (max-width:768px) {
+  .faq .faq-info{
+    grid-template-columns: 1fr;
+  }
+  .faq-info .img-info{
+    text-align: center;
+    display: none;
+    margin: 0;
+  }
+}
 
 /*--------Testimonials-------*/
 .testimonials{
@@ -367,20 +582,45 @@ header .mobile-toggle{
   justify-content: flex-start;
 }
 .testimonials .rvw-card{
-  background-color: #dbfbfc;
+  background-color: #ffffff;
+  color: #194563;
   min-width: 350px;
-  max-width: 400px;
   padding: 1rem 2rem;
-  text-align: justify;
+  text-align: center;
   min-height: 8rem;
-  height: 250px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20px;
   box-shadow: #194563 0px 4px 8px -2px;
   scroll-snap-align: center;
   margin-bottom: 1rem;
 }
+
+.testimonials .rvw-card>i{
+  font-size: 50px;
+  color: #194563;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .rvw-card p{
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  color: #194563;
+}
+.testimonials .rvw-card p .first{
+  position: absolute;
+  top:-20;
+  left: -20;
+  rotate: 180deg;
+  color: #194563;
+}
+.testimonials .rvw-card p>i:last-child{
+  float: bottom-right;
+  color: #194563;
+}
+
 
 /*---------Footer-----------*/
 
@@ -413,11 +653,6 @@ footer .copy-rights{
 
   /*------Hero------*/
   .hero .container{
-    display: block;
-  }
-
-/*---------Services---*/
-  .services-comp .services{
     display: block;
   }
 

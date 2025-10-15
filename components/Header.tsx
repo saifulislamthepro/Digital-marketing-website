@@ -5,7 +5,6 @@ import { useState, useRef, useEffect } from "react"
 export default function Header() {  const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropActive, setDrop] = useState(false);
-  const [pdropActive, setpDrop] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
@@ -50,17 +49,32 @@ export default function Header() {  const [mounted, setMounted] = useState(false
                 <div className="block">
                     <a href="/"><img src="/images/logo.svg" alt="logo" width={70}/></a>
                 </div>
-                <div className="block">
                     <nav className={`flex nav-lists ${menuOpen ? 'active' : ''}`}>
-                        <a href="/about">About</a>
-                        <a href="/services">Services</a>
-                        <a href="/packages">Packages</a>
-                        <a href="/portfolio">Portfolio</a>
-                        <a href="/contact">Contact Us</a>
+                        <a className="list" href="/about">About</a>
+                        <div onClick={()=> setDrop(!dropActive)} className="services-container list">Services <i className={`fi fi-rs-angle-left ${dropActive? "i-rotate": ""}`}></i>
+                        <ul className={`drop-down ${dropActive ? 's-active' : ''}`}>
+                          <li><a href="/#services">Web Design </a></li>
+                          <li><a href="/#services">Web Development </a></li>
+                          <li><a href="/#services">Graphics Design</a></li>
+                          <li><a href="/#services">Video editing</a></li>
+                          <li><a href="/#services">Digital marketing</a></li>
+                        </ul>
+                        </div>
+                        <div onClick={()=> setDrop(!dropActive)} className="packages-container list">Packages <i className={`fi fi-rs-angle-left ${dropActive? "i-rotate": ""}`}></i>
+                        <ul className={`p-drop-down ${dropActive ? 'p-active' : ''}`}>
+                          <li><a href="/#services">Web Design </a></li>
+                          <li><a href="/#services">Web Development </a></li>
+                          <li><a href="/#services">Graphics Design</a></li>
+                          <li><a href="/#services">Video editing</a></li>
+                          <li><a href="/#services">Digital marketing</a></li>
+                        </ul>
+                        </div>
+                        <a className="list" href="/portfolio">Portfolio</a>
+                        <a className="list" href="/contact">Contact Us</a>
                     </nav>
-                </div>
-                <div className="block">
-                    <strong>Book a Meeting</strong>
+                <div className="booking-icon-container">
+                  <i className="fi fi-rs-calendar-clock"></i>
+                  <p className="booking-alert">Book A Meeting</p>
                 </div>
                 <div onClick={()=> {setMenuOpen(!menuOpen)}} className="flex mobile-toggle">
                     <div className={`bars ${menuOpen ? "bar-closed" : ''}`}>
