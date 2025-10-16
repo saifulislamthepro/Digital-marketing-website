@@ -2,19 +2,17 @@
 
 
 
-export default function Partners() {
+export default function Partners({ content, heading }: { content: { title: string, content: string, imgUrl: string }[], heading: { title: string, content: string, imgUrl: string }[] }) {
 
 
 
     return(
         <section className="container flex">
-            <p>The platforms <br />we are Partner with</p>
-            <div className="flex partners-div">
-                <i className="fi fi-brands-facebook"></i>
-                <i className="fi fi-brands-youtube"></i>
-                <i className="fi fi-brands-google"></i>
-                <i className="fi fi-brands-whatsapp"></i>
-                <i className="fi fi-brands-instagram"></i>
+            <p>{heading[0].title}</p>
+            <div className="flex partners-div" >
+            {content.map((item,i)=> (
+                <i className={`fi ${item.imgUrl}`} key={i}></i>
+            ))}
             </div>
         </section>
     )

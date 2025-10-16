@@ -8,7 +8,7 @@ import WhyUs from "@/components/WhyUs";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
-import { heroContent, objectiveContent, servicesContent, whyUsContent, FaqContent } from "@/db/data";
+import { heroContent, objectiveContent, servicesContent, whyUsContent, FaqContent, partnersContent } from "@/db/data";
 
 type content = {
   title: string,
@@ -23,40 +23,39 @@ export default function Home() {
   const servicesContentData: content[] = servicesContent();
   const whyUsContentData: content[] = whyUsContent();
   const faqContentData: content[] = FaqContent();
+  const partnersContentData: content[] = partnersContent().partnersContent;
+  const partnersHeading: content[] = partnersContent().partnersHeading
 
   return (
-    <div className="flex page">
+    <div className="page">
       <div className="hero flex">
           <Hero content={heroContentData}/>
       </div>
       <section className="partners flex">
-        <Partners/>
+        <Partners content={partnersContentData} heading={partnersHeading}/>
       </section>
-      <section className="objective">
+      <section className="objective flex">
         <Objective content={objectiveContentData}/>
       </section>
-      <section className="services-comp" id="services">
+      <section className="services-comp flex" id="services">
         <div className="services-headline">
-            <h1>All the Services we provide are here</h1>
-            <p>Lorem, equatur, eaque cupiditate molestias sint harum non, repudiandae voluptates, numquam consequuntur culpa saepe.</p>
+            <h1>OUR PROFESSIONAL SERVICES</h1>
+            <h2>SmartGen offers web development, SEO, graphic design, UI/UX, video editing, and social media marketing — all strategically crafted.</h2>
         </div>
         <Services content={servicesContentData}/>
       </section>
       <section className="cta flex">
         <Cta/>
       </section>
-      <section className="why-us">
+      <section className="why-us flex">
         <div className="texts">
-          <h1>Why We’re Best Choice as a Digital Marketing agency for Your Success</h1>
-          <p>Start your online journey with our digital marketing skills to achieve notable results. We use all the advanced marketing tools and customer-centric campaigns that are sure to grow your leads, sales, and ROI. Our focus on clear reporting, ongoing improvements, and client success helps your brand build lasting online growth.</p>
+          <h1>Why Choose SmartGen?</h1>
+          <h2>SmartGen blends strategy, design, and technology to deliver premium digital solutions. We build trustworthy platforms, emotionally resonant branding, and SEO-optimized experiences that convert and scale with confidence</h2>
         </div>
         <WhyUs content={whyUsContentData}/>
       </section>
-      <section className="faq">                     
+      <section className="faq flex">                     
         <FAQ content={faqContentData}/>
-      </section>
-      <section className="testimonials">
-        <Testimonials/>
       </section>
     </div>
   );

@@ -12,9 +12,9 @@ type content = {
 export function heroContent () {
   const heroContent: content[] = [
   {
-    title: "SmartGen | Your Ultimate digital Growth Partner",
-    content: "We're a complete One stop marketing agency in Bangladesh. Our goal is to make your businesses online presence Professionaly",
-    imgUrl: "/images/Ads.png"
+    title: " About SmartGen",
+    content: "SmartGen is Bangladesh’s benchmark for digital brilliance — a mission-driven agency blending strategy, design, and technology to build trust and drive action.",
+    imgUrl: "/images/Logo.svg"
   }];
 
   return heroContent;
@@ -24,10 +24,10 @@ export function objectiveContent () {
 
 const objectiveContent: content[] = [
   {
-    title: "We're A One stop Digital Marketing Agency In Bangladesh",
-    content: "SmartGen’s objective is to empower businesses and organizations in Bangladesh with premium digital solutions that build trust, drive engagement, and deliver measurable results. We specialize in full-stack web development, SEO, branding, and scalable infrastructure — crafting emotionally resonant experiences that convert. Our mission-driven approach blends strategy, design, and technology to elevate digital standards and help clients thrive in an increasingly competitive online landscape.",
-    subheading: "We are committed to delivering exceptional results and helping businesses thrive in the digital landscape. ",
-    imgUrl: "/images/Promotion.png"
+    title: "Who We Are",
+    content: "Founded by visionary digital architect Green71, SmartGen is a full-service digital marketing agency based in Dhaka. We specialize in building premium, conversion-focused websites and scalable software solutions for charities, travel agencies, ecommerce, real estate, and personal brands.",
+    subheading: "We are a dedicated team committed to delivering exceptional results by growing businesses in the digital landscape. ",
+    imgUrl: "/images/Green 71 Foundation Logo.png"
   }
 ];
 

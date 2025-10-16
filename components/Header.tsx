@@ -46,27 +46,25 @@ export default function Header() {  const [mounted, setMounted] = useState(false
   return(
         <header className={`flex ${scrolled ? "fixed" : ""}`}>
             <section className="container flex" ref={menuRef}>
-                <div className="block">
+                <div className="logo">
                     <a href="/"><img src="/images/logo.svg" alt="logo" width={70}/></a>
                 </div>
                     <nav className={`flex nav-lists ${menuOpen ? 'active' : ''}`}>
                         <a className="list" href="/about">About</a>
                         <div onClick={()=> setDrop(!dropActive)} className="services-container list">Services <i className={`fi fi-rs-angle-left ${dropActive? "i-rotate": ""}`}></i>
                         <ul className={`drop-down ${dropActive ? 's-active' : ''}`}>
-                          <li><a href="/#services">Web Design </a></li>
-                          <li><a href="/#services">Web Development </a></li>
-                          <li><a href="/#services">Graphics Design</a></li>
-                          <li><a href="/#services">Video editing</a></li>
-                          <li><a href="/#services">Digital marketing</a></li>
+                          <li><a href="/website">Web Development </a></li>
+                          <li><a href="/graphics-design">Graphics Design</a></li>
+                          <li><a href="/video">Video editing</a></li>
+                          <li><a href="/marketing">Digital marketing</a></li>
                         </ul>
                         </div>
                         <div onClick={()=> setDrop(!dropActive)} className="packages-container list">Packages <i className={`fi fi-rs-angle-left ${dropActive? "i-rotate": ""}`}></i>
                         <ul className={`p-drop-down ${dropActive ? 'p-active' : ''}`}>
-                          <li><a href="/#services">Web Design </a></li>
-                          <li><a href="/#services">Web Development </a></li>
-                          <li><a href="/#services">Graphics Design</a></li>
-                          <li><a href="/#services">Video editing</a></li>
-                          <li><a href="/#services">Digital marketing</a></li>
+                          <li><a href="/startup">StartUp Pack </a></li>
+                          <li><a href="/business">Business Pack </a></li>
+                          <li><a href="/premium">Premium Pack</a></li>
+                          <li><a href="/Custom">Custom pack</a></li>
                         </ul>
                         </div>
                         <a className="list" href="/portfolio">Portfolio</a>

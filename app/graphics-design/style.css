@@ -1,0 +1,20 @@
+
+.web-page .hero{
+    margin: 0;
+    padding: 0;
+}
+.web-page .hero img{
+    width: 200px;
+}
+
+.objective .container .objective-texts{
+    grid-column: span 6;
+}
+
+.objective .container .objective-img{
+    grid-column: span 6;
+}
+
+.objective .container .objective-img img{
+    width: 300px;
+}
