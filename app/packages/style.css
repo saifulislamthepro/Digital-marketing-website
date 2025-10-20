@@ -1,0 +1,75 @@
+
+
+.web-page .hero{
+    margin: 0;
+    padding: 0;
+}
+.web-page .hero img{
+    width: 200px;
+}
+
+.objective .container .objective-texts{
+    grid-column: span 6;
+}
+
+.objective .container .objective-img{
+    grid-column: span 6;
+}
+
+.objective .container .objective-img img{
+    width: 300px;
+}
+
+
+
+
+
+/* Package Summary Styles */
+.package-summary {
+  background-color: #f9f9fb;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.package-summary h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.package-summary .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.package-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.package-summary th,
+.package-summary td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.package-summary th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #555;
+}
+
+.package-summary td {
+  color: #444;
+}
+
+.package-summary tbody tr:last-child td {
+  border-bottom: none;
+}

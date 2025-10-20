@@ -1,0 +1,52 @@
+/* Sales Support Page Styles */
+.sales-section {
+  padding: 60px 20px;
+  background-color: #f9f9fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sales-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.sales-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sales-container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #4f46e5;
+}
+
+.sales-container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.sales-container ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.sales-container ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.sales-container a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.sales-container a:hover {
+  text-decoration: underline;
+}

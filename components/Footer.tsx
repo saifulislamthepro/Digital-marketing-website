@@ -12,31 +12,27 @@ export default function Footer() {
             <section className="container grid">
                 <div className="block">
                     <h2>Office Address</h2>
-                    <p>House#32/D/E, 13thFloor, Natore Tower, Road-3, Dhaka 1230</p>
-                    <p>Phone:12345678965</p>
-                    <p>email: info@some.com</p>
+                    <p>House#137/10, 9thFloor, SR plaza, mazar road, mirpur-01, Dhaka 1216</p>
+                    <a href="tel: +8801648898129"><p>Phone:01648898129</p></a>
+                    <p>email: green71email@gmail.com</p>
                 </div>
                 <div className="block">
-                    <h2>Services</h2>
-                    <p>Web dev and Design</p>
-                    <p>Branding design</p>
-                    <p>Search engine Optimization</p>
-                    <p>Social Media Marketing</p>
+                    <a href="/#services"><h2>Services</h2></a>
+                    <a href="/website"><p>Web Design and development</p></a>
+                    <a href="/graphics-design"><p>Branding design</p></a>
+                    <a href="/video"><p>Video production and editing</p></a>
+                    <a href="/marketing"><p>Social Media Marketing</p></a>
                 </div>
                 <div className="block">
                     <h2>Important Links</h2>
-                    <p>About Us</p>
-                    <p>Blogs</p>
-                    <p>Contact Us</p>
-                    <p>Portfolio</p>
+                    <a href="/about"><p>About Us</p></a>
+                    <a href="/contact"><p>Contact Us</p></a>
                 </div>
                 <div className="block">
                     <h2>Policy Info</h2>
-                    <p>Privacy Policy</p>
-                    <p>Terms & Conditions</p>
-                    <p>Refund Policy</p>
-                    <p>Sales Support</p>
-                    <p>How to Order</p>
+                    <a href="/privacy-policy"><p>Privacy Policy</p></a>
+                    <a href="terms-and-condition"><p>Terms & Conditions</p></a>
+                    <a href="/sales-support"><p>Sales Support</p></a>
                 </div>
             </section>
             <section className="container copy-rights">

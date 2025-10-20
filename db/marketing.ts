@@ -27,7 +27,7 @@ const objectiveContent: content[] = [
     title: "How we do impactful Digital Marketing",
     content: "We begin with deep audience research and brand analysis, then craft tailored campaigns across SEO, social media, content, and paid ads. Every move is data-driven and emotionally resonant — designed to engage, convert, and grow your brand’s online presence with measurable results.",
     subheading: "SmartGen combines strategy, creativity, and data to deliver digital marketing that drives traffic, builds trust, and boosts conversions",
-    imgUrl: "/images/MotionGraphics.png"
+    imgUrl: "/images/Ads.png"
   }
 ];
 

@@ -32,7 +32,7 @@ export default function Website() {
        <title>About SmartGen | Digital Marketing Agency in Bangladesh</title>
         <meta
           name="description"
-          content="SmartGen is a premium digital marketing agency in Bangladesh specializing in strategic web development, branding, and SEO. Learn more about our mission, team, and impact."
+          content="SmartGen is a premium digital marketing agency in Bangladesh specializing in strategic web development, ecommrce website, landing page etc. Learn more about our mission, team, and impact."
         />
     </head>
     

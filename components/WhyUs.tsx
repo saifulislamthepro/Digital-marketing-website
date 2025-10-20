@@ -9,13 +9,13 @@ export default function WhyUs({content}: {content: {title: string, content: stri
         <section className="flex">
             <section className="container">
                 <div className="img-info grid">
-                    <ul className="info">
+                    <ul className="info flex">
                         {content.map((item, i) => (                        
                             <DropDown key={i} title={item.title} content={item.content} i={i}/>
                         ))}
                     </ul>
                     <div className="img-container flex">
-                        <img src="/images/Website.jpg" alt="smartgen"  width={400}/>
+                        <img src="/images/Logo.svg" alt="smartgen"  width={200}/>
                     </div>
                 </div>
             </section>

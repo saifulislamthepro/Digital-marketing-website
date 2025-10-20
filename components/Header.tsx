@@ -61,19 +61,13 @@ export default function Header() {  const [mounted, setMounted] = useState(false
                         </div>
                         <div onClick={()=> setDrop(!dropActive)} className="packages-container list">Packages <i className={`fi fi-rs-angle-left ${dropActive? "i-rotate": ""}`}></i>
                         <ul className={`p-drop-down ${dropActive ? 'p-active' : ''}`}>
-                          <li><a href="/startup">StartUp Pack </a></li>
-                          <li><a href="/business">Business Pack </a></li>
-                          <li><a href="/premium">Premium Pack</a></li>
-                          <li><a href="/Custom">Custom pack</a></li>
+                          <li><a href="/packages/startup">StartUp Pack </a></li>
+                          <li><a href="/packages/business">Business Pack </a></li>
+                          <li><a href="/packages/premium">Premium Pack</a></li>
                         </ul>
                         </div>
-                        <a className="list" href="/portfolio">Portfolio</a>
                         <a className="list" href="/contact">Contact Us</a>
                     </nav>
-                <div className="booking-icon-container">
-                  <i className="fi fi-rs-calendar-clock"></i>
-                  <p className="booking-alert">Book A Meeting</p>
-                </div>
                 <div onClick={()=> {setMenuOpen(!menuOpen)}} className="flex mobile-toggle">
                     <div className={`bars ${menuOpen ? "bar-closed" : ''}`}>
                         <i className="fi fi-rs-list"></i>

@@ -1,17 +1,24 @@
+'use client'
+
+import { useState } from "react"
+import Form from "./contactForm"
 
 
 
 export default function Cta() {
+    const [shoeForm, setShow] = useState(false)
 
 
     return(
         <section className="container flex">
             <div className="cta-texts flex">
-                <h2>Your Digital Growth Start Here</h2>
+                <div className={`form-wrapper flex ${shoeForm? "form-active" : ''}`}>
+                    <Form />
+                </div>
                 <h3>Get A Free Consultation NOW!</h3>
                 <div className="flex">
-                    <button>Get A Free Proposal</button>
-                    <button>CALL +8801711153960</button>
+                    <button onClick={() => setShow(!shoeForm)}>Get A Free Proposal</button>
+                    <a href="tel:+8801711153960"><button>CALL +8801711153960</button></a>
                 </div>
             </div>
         </section>
