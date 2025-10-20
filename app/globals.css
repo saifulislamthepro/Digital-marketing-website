@@ -18,11 +18,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Segoe UI', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #555;
+  background-color: #fff;
 }
 
 * {

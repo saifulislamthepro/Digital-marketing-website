@@ -47,7 +47,7 @@ export default function Header() {  const [mounted, setMounted] = useState(false
         <header className={`flex ${scrolled ? "fixed" : ""}`}>
             <section className="container flex" ref={menuRef}>
                 <div className="logo">
-                    <a href="/"><img src="/images/logo.svg" alt="logo" width={70}/></a>
+                    <a href="/"><img src="/images/Logo.svg" alt="logo" width={80}/></a>
                 </div>
                     <nav className={`flex nav-lists ${menuOpen ? 'active' : ''}`}>
                         <a className="list" href="/about">About</a>
