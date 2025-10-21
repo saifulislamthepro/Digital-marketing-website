@@ -21,10 +21,10 @@ export default function Form() {
     e.preventDefault();
 
     const templateParams = {
-      name: form.name,
-      email: form.email,
-      number: form.number,
-      message: form.message
+      businessName: form.name,
+      contactEmail: form.email,
+      contactPhone: form.number,
+      notes: form.message
     };
 
     emailjs
