@@ -24,7 +24,7 @@ export function objectiveContent () {
 
 const objectiveContent: content[] = [
   {
-    title: "Who We Are",
+    title: "Who We Are?",
     content: "Founded by visionary digital architect Green71, SmartGen is a full-service digital marketing agency based in Dhaka. We specialize in building premium, conversion-focused websites and scalable software solutions for charities, travel agencies, ecommerce, real estate, and personal brands.",
     subheading: "We are a dedicated team committed to delivering exceptional results by growing businesses in the digital landscape. ",
     imgUrl: "/images/Green 71 Foundation Logo.png"
@@ -75,22 +75,22 @@ return servicesContent;
 export function whyUsContent () {
 const whyUsContent: content[] = [
   {
-    title: "Strategic Thinking Meets Premium Executio",
+    title: "Strategic Thinking Meets Premium Executions",
     content: "At SmartGen, we don’t just build websites — we architect digital ecosystems. Every project begins with deep strategic insight, ensuring your brand’s goals, audience, and market position are reflected in every pixel and line of code. Our solutions are designed to convert, scale, and inspire trust from day one.",
     imgUrl: ""
   },
   {
-    title: "Emotionally Resonant Design That Convert",
+    title: "Emotionally Resonant Design That Converts",
     content: "We craft visually stunning, emotionally intelligent designs that do more than look good — they drive action. From modern layouts and soft gradients to responsive grids and intuitive UI/UX, our design philosophy blends beauty with purpose, helping your brand stand out and connect meaningfully with your audience.",
     imgUrl: ""
   },
   {
-    title: "Technical Reliability You Can Trus",
+    title: "Technical Reliability You Can Trust",
     content: "SmartGen delivers secure, scalable, and SEO-optimized platforms built on robust backend logic. Whether it’s DNS setup, form handling, or infrastructure planning with Firebase or Supabase, we ensure your digital foundation is fast, reliable, and ready for growth — so you never lose a lead to downtime.",
     imgUrl: ""
   },
   {
-    title: " Mission-Driven Impact Across Industrie",
+    title: " Mission-Driven Impact Across Industries",
     content: "We’re proud to serve charities, travel agencies, ecommerce brands, and real estate firms with solutions that elevate their digital presence and social impact. Our work is guided by empathy, transparency, and a commitment to setting new standards for digital excellence in Bangladesh and beyond.",
     imgUrl: ""
   }

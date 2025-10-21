@@ -416,12 +416,19 @@ header nav .list{
 .cta input, textarea{
   width: 100%;
   display: block;
-  padding: 1.8%;
+  padding: 2.5%;
   margin-bottom: 10px;
+  border: none;  
+}
+
+input:focus, textarea:focus{
+  outline: none;
 }
 
 .cta .form-wrapper{
   display: none;
+  background-color: #eee;
+  padding: 1rem;
 }
 
 .cta .form-active{

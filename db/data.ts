@@ -12,8 +12,8 @@ type content = {
 export function heroContent () {
   const heroContent: content[] = [
   {
-    title: "SmartGen | Your Ultimate digital Growth Partner",
-    content: "We're a complete One stop marketing agency in Bangladesh. Our goal is to make your businesses online presence Professionaly",
+    title: "SmartGen | Your Ultimate digital Growth Partner.",
+    content: "We're a complete One stop marketing agency in Bangladesh. Our goal is to make your businesses online presence Professionaly.",
     imgUrl: "/images/Ads.png"
   }];
 
@@ -24,7 +24,7 @@ export function objectiveContent () {
 
 const objectiveContent: content[] = [
   {
-    title: "We're A One stop Digital Marketing Agency In Bangladesh",
+    title: "We're A One stop Digital Marketing Agency In Bangladesh.",
     content: "SmartGen’s objective is to empower businesses and organizations in Bangladesh with premium digital solutions that build trust, drive engagement, and deliver measurable results. We specialize in full-stack web development, SEO, branding, and scalable infrastructure — crafting emotionally resonant experiences that convert. Our mission-driven approach blends strategy, design, and technology to elevate digital standards and help clients thrive in an increasingly competitive online landscape.",
     subheading: "We are committed to delivering exceptional results and helping businesses thrive in the digital landscape. ",
     imgUrl: "/images/Promotion.png"
@@ -75,22 +75,22 @@ return servicesContent;
 export function whyUsContent () {
 const whyUsContent: content[] = [
   {
-    title: "Strategic Thinking Meets Premium Executio",
+    title: "Strategic Thinking Meets Premium Executions",
     content: "At SmartGen, we don’t just build websites — we architect digital ecosystems. Every project begins with deep strategic insight, ensuring your brand’s goals, audience, and market position are reflected in every pixel and line of code. Our solutions are designed to convert, scale, and inspire trust from day one.",
     imgUrl: ""
   },
   {
-    title: "Emotionally Resonant Design That Convert",
+    title: "Emotionally Resonant Design That Converts",
     content: "We craft visually stunning, emotionally intelligent designs that do more than look good — they drive action. From modern layouts and soft gradients to responsive grids and intuitive UI/UX, our design philosophy blends beauty with purpose, helping your brand stand out and connect meaningfully with your audience.",
     imgUrl: ""
   },
   {
-    title: "Technical Reliability You Can Trus",
+    title: "Technical Reliability You Can Trust",
     content: "SmartGen delivers secure, scalable, and SEO-optimized platforms built on robust backend logic. Whether it’s DNS setup, form handling, or infrastructure planning with Firebase or Supabase, we ensure your digital foundation is fast, reliable, and ready for growth — so you never lose a lead to downtime.",
     imgUrl: ""
   },
   {
-    title: " Mission-Driven Impact Across Industrie",
+    title: " Mission-Driven Impact Across Industries",
     content: "We’re proud to serve charities, travel agencies, ecommerce brands, and real estate firms with solutions that elevate their digital presence and social impact. Our work is guided by empathy, transparency, and a commitment to setting new standards for digital excellence in Bangladesh and beyond.",
     imgUrl: ""
   }
