@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react"
 
-export default function Header() {  const [mounted, setMounted] = useState(false);
+export default function Header() { 
+   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropActive, setDrop] = useState(false);
     const [scrolled, setScrolled] = useState(false);

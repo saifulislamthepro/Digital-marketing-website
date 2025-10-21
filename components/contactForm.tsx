@@ -1,10 +1,10 @@
 'use client';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Form() {
-    
+  const [mounted, setMounted] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -44,7 +44,11 @@ export default function Form() {
       });
   };
 
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
+  if (!mounted) return null
   return (
     <form onSubmit={handleSubmit} className="contact-form">
           <p>Give your contact details so we can contact You</p>

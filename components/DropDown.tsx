@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function DropDown(content: {title: string, content: string, i: number}) {
     const [showMore, setShowMore] = useState(false);
     const [index, setIndex] = useState<number | null>(null);
+    const [mounted,setMounted] = useState(false)
 
 
 
@@ -21,10 +22,12 @@ export default function DropDown(content: {title: string, content: string, i: nu
         }
       };
     
+    useEffect(()=> {
+        setMounted(true)
+    },[]);
     
     
-    
-    
+    if (!mounted) return null;
     
     return(
         <ul className="info">                      

@@ -132,7 +132,7 @@ header nav .services-container , header nav .packages-container{
 }
 header nav .services-container .drop-down, .p-drop-down{
   position: absolute;
-  top: 65;
+  top: 47;
   width: max-content;
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
